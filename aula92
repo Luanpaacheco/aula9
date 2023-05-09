@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+void repet (int n, char A){
+    int i =1;
+    while (n>=i)
+    {
+        i++;
+        printf("%c" ,A);
+
+    }
+}
+    int main()
+    {
+        int N;
+        char A;
+
+        printf("quantas vezes? ");
+        scanf("%d", &N);
+        printf("o caract: ");
+        scanf(" %c", &A);
+        repet(N,A);
+    }
