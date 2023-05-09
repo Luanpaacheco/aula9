@@ -1,0 +1,38 @@
+#include<stdio.h>
+void ope(char op, int a, int b){
+    float R=0;
+
+    if (op=='+'){
+        R= a + b;
+        printf("%f", R );
+    } 
+        else if (op =='-'){ 
+          R= a - b;
+          printf("%f", R );}
+        else if (op =='*'){ 
+          R= a * b;
+          printf("%f", R );} 
+        else if (op =='/'){ 
+          R= (float) a / b;
+          printf("%f", R );}   
+
+      
+     
+}
+int main()
+{
+    int numero1 = 0, numero2 = 0;
+    char op;
+    
+    printf("numero1: ");
+    scanf("%d", &numero1);
+    printf("numero2: ");
+    scanf("%d", &numero2);
+    printf("op: ");
+    scanf(" %c", &op);
+    ope(op,numero1,numero2);
+
+
+
+    return 0;
+}
